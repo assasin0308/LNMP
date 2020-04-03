@@ -5,6 +5,8 @@
 ```json
 # 安装Java1.8 
 
+# 安装zookeeper
+wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz
 
 
 
@@ -32,6 +34,32 @@ cp config/server.properties config/server-1.properties
     bin/kafka-server-start.sh config/server-1.properties &
 
 
+# 启动Zookeeper服务
+bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+# 查看进程
+jps
+# 启动单机Kafka服务
+bin/kafka-server-start.sh config/server.properties
+# 查看进程
+jps
+# 创建topic进行测试
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+# 查看topic列表
+ bin/kafka-topics.sh --list --zookeeper localhost:2181
+输出：test
+# 生产者消息测试
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+# 消费者消息测试
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test --from-beginning
+# 单机多broker集群配置
+cp config/server.properties config/server-1.properties 
+    vim server-1.properties
+    #修改：
+    broker.id=1
+    port=9093
+    log.dir=/tmp/kafka-logs-1
+    #启动Kafka服务
+    bin/kafka-server-start.sh config/server-1.properties &
 ```
 
 ### php 扩展
@@ -55,5 +83,11 @@ make install
 
 vim /etc/php.ini
 extension=rdkafka.so
+```
+
+### 使用
+
+```json
+# composer require  "nmred/kafka-php"
 ```
 
