@@ -43,12 +43,13 @@ cd librdkafka
 ./configure
 make && make install
 
+# yum install libtool
 
 # rdkafka.so扩展
 git clone https://github.com/arnaud-lb/php-rdkafka.git
 cd php-rdkafka
 /usr/local/php/bin/phpize
-./configure --with-php-config=/usr/local/php7.4/bin/php-config --with-libdir=/usr/local/librdkafka --with-rdkafka
+./configure --with-php-config=/usr/local/php7.4/bin/php-config 
 make all -j 5
 make install
 
