@@ -104,6 +104,9 @@ FLUSH PRIVILEGES;
 
 ```json
 默认扩展
+#yum install -y php72w-common  php72w-opcache php72w-gd  php72w-mbstring php72w-pecl-redis php72w-pecl-memcached php72w-devel php72w-cli  php72w-dba  php72w-embedded php72w-enchant  php72w-fpm  php72w-imap  php72w-interbase php72w-intl php72w-ldap  php72w-mcrypt  php72w-odbc php72w-mysql php72w-mysql php72w-pdo php72w-pdo_dblib php72w-pear  php72w-pecl-apcu php72w-pecl-imagick php72w-pecl-mongodb php72w-pecl-xdebug php72w-pgsql php72w-phpdbg  php72w-process  php72w-pspell php72w-recode php72w-snmp php72w-soap  php72w-tidy  php72w-xml  php72w-xmlrpc
+
+
 # yum install php72w-common php72w-fpm php72w-opcache php72w-gd php72w-mysqlnd php72w-mbstring php72w-pecl-redis php72w-pecl-memcached php72w-devel php72w-cli php72w-common php72w-dba php72w-devel php72w-embedded php72w-enchant  php72w-fpm php72w-gd php72w-imap  php72w-interbase php72w-intl php72w-ldap php72w-mbstring php72w-mcrypt  php72w-odbc php72w-mysql php72w-mysqlnd php72w-opcache php72w-pdo php72w-pdo_dblib php72w-pear  php72w-pecl-apcu php72w-pecl-imagick php72w-pecl-memcached php72w-pecl-mongodb php72w-pecl-redis php72w-pecl-xdebug php72w-pgsql php72w-phpdbg  php72w-process  php72w-pspell php72w-recode php72w-snmp php72w-soap  php72w-tidy  php72w-xml  php72w-xmlrpc
 ```
 
