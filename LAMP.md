@@ -14,7 +14,7 @@ curl-devel ImageMagick-devel libicu-devel sqlite-devel oniguruma oniguruma-devel
 openssl openssl-devel ln -s /usr/lib64/libssl.so /usr/lib/
 
 
-apt install libtalloc libtalloc-dev  libboost-all-dev git-core doxygen libpcl-all build-essential libgl1-mesa-dev cmake libgoogle-glog-dev libatlas-base-dev liblapack  libeigen3-dev libsuitesparse-dev build-essential cmake pkg-config aptitude libcurl4-openssl-dev linc-ares-dev protobuf-compiler libprotobuf-dev 
+apt install  libtalloc-dev  libboost-all-dev git-core doxygen  build-essential libgl1-mesa-dev cmake libgoogle-glog-dev libatlas-base-dev   libeigen3-dev libsuitesparse-dev build-essential cmake pkg-config aptitude libcurl4-openssl-dev  protobuf-compiler libprotobuf-dev 
 
 ```
 
