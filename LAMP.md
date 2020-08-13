@@ -18,6 +18,18 @@ apt install  libtalloc-dev  libboost-all-dev git-core doxygen  build-essential l
 
 ```
 
+### 安装python虚拟环境
+```
+pip install virtualenv virtualenvwrapper  
+vim ~/.bashrc
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/python3/bin/python3
+# 指定virtualenv的路径
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/python3/bin/virtualenv
+source /usr/local/python3/bin/virtualenvwrapper.sh
+
+```
+
 
 
 ### 查看系统版本
